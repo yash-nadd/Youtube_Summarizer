@@ -16,7 +16,7 @@ def load_config():
 
 # List files in the project directory
         st.write("Files in Project Directory:", os.listdir('.'))
-        with open('LoginInfo/config.yaml', 'r') as file:
+        with open('pages/LoginInfo/config.yaml', 'r') as file:
             return yaml.safe_load(file)
     except FileNotFoundError:
         st.error("Configuration file not found.")
@@ -27,7 +27,7 @@ def load_config():
 
 # Function to save updated YAML configuration
 def save_config(config):
-    with open('LoginInfo/config.yaml', 'w') as file:
+    with open('pages/LoginInfo/config.yaml', 'w') as file:
         yaml.safe_dump(config, file)
 
 # Load the configuration from the YAML file
