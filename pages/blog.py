@@ -92,11 +92,14 @@ def show():
                 background-color: #1e1e1e; /* Dark black shade */
                 color: white; /* Ensure main content text color is white */
             }
+            h1 {
+                color: #9D4FDB; /* Change the color of h1 headings */
+            }
         </style>
         """, unsafe_allow_html=True
     )
 
-    st.write("# How to Use YouTube Summarizer and PDF Tool")
+    st.write("<h1>How to Use YouTube Summarizer and PDF Tool</h1>", unsafe_allow_html=True)
 
     st.markdown(
         """

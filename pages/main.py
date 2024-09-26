@@ -1,9 +1,12 @@
 import streamlit as st
+
+st.set_page_config(layout="wide")
+
 from streamlit_navigation_bar import st_navbar
 import home, tools, blog, about, profile
 import yaml
 
-st.set_page_config(layout="wide")
+
 
 # Function to load the configuration from the YAML file
 def load_config():

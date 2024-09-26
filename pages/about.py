@@ -34,24 +34,24 @@ def show():
             .navbar a:hover {
                 color: #ad8aff;
             }
-            .main-header h1 {
+            h1 {
                 text-align: center;
                 margin-top: 60px;
-                color: #ad8aff;
+                color: #9D4FDB; /* Heading color */
             }
             .content {
                 padding: 20px;
                 margin-top: 100px; /* Adjust for fixed navbar */
                 border-radius: 10px;
-                background-color: #1e1e1e;
-                color: white; /* Darker background for content */
+                background-color: #1e1e1e; /* Content background color */
+                color: white; /* Text color in content */
             }
             .faq-section {
-                background-color: #1a1a1a;
+                background-color: #1a1a1a; /* FAQ section background */
                 padding: 30px;
                 border-radius: 20px;
                 margin-top: 50px;
-                color: white; /* Set the text color to white */
+                color: white; /* Text color in FAQ */
             }
             .footer {
                 background-color: #e6ccff;
@@ -64,7 +64,7 @@ def show():
         """, unsafe_allow_html=True
     )
 
-    st.write("# About YouTube Summarizer")
+    st.markdown("<h1><i>About YouTube Summarizer</i></h1>", unsafe_allow_html=True)
     
     st.markdown(
         """
@@ -103,3 +103,4 @@ def show():
         </div>
         """, unsafe_allow_html=True
     )
+    
