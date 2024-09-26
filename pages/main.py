@@ -1,15 +1,9 @@
 import streamlit as st
+st.set_page_config(layout="wide")
 from streamlit_navigation_bar import st_navbar
 import home, tools, blog, about, profile
 import yaml
 import os
-
-import streamlit as st
-
-# This should be the first Streamlit command
-st.set_page_config(page_title="Your App Title", page_icon=":smiley:", layout="wide")
-
-# Your other imports and code here
 
 
 # Function to load the configuration from the YAML file
