@@ -1,4 +1,6 @@
 import sys
+import transformers
+import youtube_transcript_api
 from transformers import pipeline
 from youtube_transcript_api import YouTubeTranscriptApi
 
