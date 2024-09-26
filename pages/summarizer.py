@@ -1,6 +1,8 @@
 import sys
-import transformers
-import youtube_transcript_api
+try:
+    import transformers
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers"])
 from transformers import pipeline
 from youtube_transcript_api import YouTubeTranscriptApi
 import subprocess
