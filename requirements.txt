@@ -1,3 +1,8 @@
 streamlit
+streamlit_navigation_bar
+subprocess
+os
+sys
+yaml
 transformers
 youtube-transcript-api
