@@ -157,7 +157,7 @@ def show():
         st.write("Generating summary... Please wait.")
 
         try:
-            subprocess.run(["python3", "summarizer.py", str(summary_length)], check=True)
+            subprocess.run(["python3", "pages/summarizer.py", str(summary_length)], check=True)
         except subprocess.CalledProcessError as e:
             st.error(f"Error occurred while generating summary: {e}")
             st.stop()
