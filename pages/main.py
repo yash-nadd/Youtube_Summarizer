@@ -12,6 +12,10 @@ import os
 # Function to load the configuration from the YAML file
 def load_config():
     try:
+        st.write("Current Working Directory:", os.getcwd())
+
+# List files in the project directory
+        st.write("Files in Project Directory:", os.listdir('.'))
         with open('LoginInfo/config.yaml', 'r') as file:
             return yaml.safe_load(file)
     except FileNotFoundError:
