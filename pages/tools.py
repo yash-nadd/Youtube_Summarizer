@@ -8,8 +8,8 @@ def show():
     st.write("# Tools Section")
     st.write("This section can contain links or information about tools related to the YouTube Summarizer.")
 
-    if os.path.exists('texts/summary.txt'):
-        with open('texts/summary.txt', 'r') as file:
+    if os.path.exists('pages/texts/summary.txt'):
+        with open('pages/texts/summary.txt', 'r') as file:
             summary = file.read()
 
         if st.button("Convert Summary to PDF"):

@@ -58,3 +58,5 @@ def main():
             print("Error: Unable to retrieve video ID or transcript length due to previous error.")
         sys.exit(1)
 
+if __name__ == "__main__":
+    main()
