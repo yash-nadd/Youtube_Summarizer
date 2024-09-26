@@ -2,6 +2,5 @@ fpdf
 PyYAML
 streamlit
 streamlit_navigation_bar
-transformers
-youtube_transcript_api
-gunicorn
+transformers==4.45.0
+youtube-transcript-api==0.6.2

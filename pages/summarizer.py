@@ -1,5 +1,7 @@
 import sys
 import os
+
+# Add local bin directory to PATH
 os.environ["PATH"] += os.pathsep + "/home/appuser/.local/bin"
 
 import subprocess
