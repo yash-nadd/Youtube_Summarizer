@@ -1,7 +1,7 @@
-fpdf==1.7.2
-PyYAML==6.0.2
-streamlit==1.38.0
-streamlit_navigation_bar==3.3.0
+fpdf
+PyYAML
+streamlit
+streamlit_navigation_bar
 transformers
-youtube_transcript_api==0.6.2
+youtube_transcript_api
 gunicorn
