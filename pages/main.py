@@ -4,7 +4,13 @@ import home, tools, blog, about, profile
 import yaml
 import os
 
-st.set_page_config(layout="wide")
+import streamlit as st
+
+# This should be the first Streamlit command
+st.set_page_config(page_title="Your App Title", page_icon=":smiley:", layout="wide")
+
+# Your other imports and code here
+
 
 # Function to load the configuration from the YAML file
 def load_config():
