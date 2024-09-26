@@ -1,21 +1,14 @@
 import streamlit as st
-
-st.set_page_config(layout="wide")
-
 from streamlit_navigation_bar import st_navbar
 import home, tools, blog, about, profile
 import yaml
 import os
 
-
+st.set_page_config(layout="wide")
 
 # Function to load the configuration from the YAML file
 def load_config():
     try:
-        st.write("Current Working Directory:", os.getcwd())
-
-# List files in the project directory
-        st.write("Files in Project Directory:", os.listdir('.'))
         with open('pages/LoginInfo/config.yaml', 'r') as file:
             return yaml.safe_load(file)
     except FileNotFoundError:
