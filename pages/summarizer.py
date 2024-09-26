@@ -4,7 +4,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 
 try:
     # Read the YouTube video ID from file
-    with open('texts/video_id.txt', 'r') as file:
+    with open('pages/texts/video_id.txt', 'r') as file:
         youtube_video = file.read().strip()
 
     video_id = youtube_video.split("=")[-1]
@@ -34,7 +34,7 @@ try:
     formatted_summary = "\n".join([f"- {point.strip()}" for point in bullet_points if point])
 
     # Save the formatted summary to a file
-    with open('texts/summary.txt', 'w') as file:
+    with open('pages/texts/summary.txt', 'w') as file:
         file.write(formatted_summary)
 
 except Exception as e:

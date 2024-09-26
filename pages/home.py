@@ -151,7 +151,7 @@ def show():
    
 
     if submit_button and video_url:
-        with open('texts/video_id.txt', 'w') as file:
+        with open('pages/texts/video_id.txt', 'w') as file:
             file.write(video_url)
 
         st.write("Generating summary... Please wait.")
@@ -162,8 +162,8 @@ def show():
             st.error(f"Error occurred while generating summary: {e}")
             st.stop()
 
-        if os.path.exists('texts/summary.txt'):
-            with open('texts/summary.txt', 'r') as file:
+        if os.path.exists('pages/texts/summary.txt'):
+            with open('pages/texts/summary.txt', 'r') as file:
                 summary = file.read()
 
             video_id = video_url.split('=')[-1]
