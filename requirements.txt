@@ -3,7 +3,7 @@ fpdf
 PyYAML
 streamlit
 streamlit_navigation_bar
-transformers
+transformers == 4.45.0
 youtube_transcript_api
 
 
